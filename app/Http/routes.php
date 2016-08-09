@@ -30,3 +30,13 @@ Route::get('canada/second_home',function(){
 Route::get('europ/third_home',function(){
 	return "<h2>Like to live and work here !!</h2>";
 });
+
+
+Route::get('/technologies',function(){});
+Route::get('/technologies/rails',function(){});
+Route::get('/technologies/nodejs',function(){});
+Route::get('/technologies/laravel',function(){});
+
+Route::get('/languages',function(){});
+Route::get('/languages/java',function(){});
+Route::get('/languages/objective-c',function(){});
