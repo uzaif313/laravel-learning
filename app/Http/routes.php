@@ -12,11 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+		return "<div align='center'><h1>India is better to live</h1></div>";
 });
 $route_function = function(){
 	return "<h1>India is better home than other country</h1>";
 };
+
+
+
 Route::get('india/home',$route_function);
 
 Route::get('canada/second_home',function(){
