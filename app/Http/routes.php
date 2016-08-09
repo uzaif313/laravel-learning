@@ -32,8 +32,12 @@ Route::get('europ/third_home',function(){
 });
 
 
-Route::get('/technologies',function(){});
-Route::get('/technologies/rails',function(){});
+Route::get('/technologies',function(){
+	return "<h1>Technology Index Page</h1>";
+});
+Route::get('/technologies/{stack}',function($tech){
+	return "Your Selected Tech is <b>{$tech}</b>";
+});
 Route::get('/technologies/nodejs',function(){});
 Route::get('/technologies/laravel',function(){});
 
