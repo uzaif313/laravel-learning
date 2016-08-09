@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('india/home',function(){
+	return "<h1>India is better home than other country</h1>";
+});
