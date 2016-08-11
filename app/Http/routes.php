@@ -32,14 +32,23 @@ Route::get('europ/third_home',function(){
 });
 
 
-Route::get('/technologies',function(){
-	return "<h1>Technology Index Page</h1>";
+// Route::get('/technologies',function(){
+// 	return "<h1>Technology Index Page</h1>";
+// });
+// Route::get('/technologies/{stack}',function($tech){
+// 	return "Your Selected Tech is <b>{$tech}</b>";
+// });
+// Route::get('/technologies/nodejs',function(){});
+// Route::get('/technologies/laravel',function(){});
+
+Route::get('/technologies/{stack?}',function($stack='Rails'){
+	// if ($stack== null) {
+	// 		return "Its technologies Index Page";
+
+	// }
+			return "Its {$stack} technologies boom!!";
+
 });
-Route::get('/technologies/{stack}',function($tech){
-	return "Your Selected Tech is <b>{$tech}</b>";
-});
-Route::get('/technologies/nodejs',function(){});
-Route::get('/technologies/laravel',function(){});
 
 Route::get('/languages',function(){});
 Route::get('/languages/java',function(){});
