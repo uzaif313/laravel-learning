@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/{data?}', function ($params = "Home") {
+		$data['params'] =  $params ;
     // return view('welcome');
-		return "<div align='center'><h1>India is better to live</h1></div>";
+		// return "<div align='center'><h1>India is better to live</h1></div>";
+		 // echo "<pre>";
+			
+		 return View::make('sample',$data);
 });
 $route_function = function(){
 	return "<h1>India is better home than other country</h1>";
