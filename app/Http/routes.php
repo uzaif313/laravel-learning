@@ -28,7 +28,9 @@ $route_function = function(){
 Route::get('india/home',$route_function);
 
 Route::get('canada/second_home',function(){
-	return "<h2>Like to live  there with family!!</h2>";
+	return Redirect::to("india/home");
+	return redirect("india/home");
+	// return "<h2>Like to live  there with family!!</h2>";
 });
 
 Route::get('europ/third_home',function(){
